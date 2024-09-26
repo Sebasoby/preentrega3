@@ -1,0 +1,10 @@
+@mixin grid-layout($columns: 4, $column-width: 25%, $row-height: 100%){
+    display: grid;
+    grid-template-columns: repeat($columns, $column-width);
+    grid-template-rows: $row-height;
+}
+@mixin custom-font($size: 2.5rem, $weight: 900, $family: "Roboto, sans-serif") {
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $family;
+}

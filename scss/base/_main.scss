@@ -1,0 +1,257 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+// index
+
+// body index
+.index-body{
+    // fondo de pantalla index
+    .fondo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        z-index: -1; 
+    }
+    // header index
+    .header-index{
+        display: block;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 5%;
+        div{
+            // titulo index
+            h1{
+                padding-bottom: 2%;
+                @include custom-font(2.5rem,900);
+            }
+            // nombre index
+            h2{
+                @include custom-font(2rem,900);
+            }
+        }
+    }
+    // main index
+    main{
+        nav{
+            // navegador index
+            .nav-index{
+                @include grid-layout(4, 25%, 100%);
+                margin-top: 100px;
+                a{
+                    text-decoration: none;
+                    li{
+                    border: 50px solid black;
+                    font-size: 20px;
+                    border-radius: 100%;
+                    background-color: black;
+                    text-align: center;
+                    color: $color-nav;
+                    }
+                }
+               
+            }
+        }
+    }
+}
+
+// perfil
+
+    body{
+        background-color: rgb(32, 31, 31);
+        header{
+            nav{
+                // navegador perfil
+                ul{
+                    @include grid-layout(5, 20%, 100%);
+                    background-color: black;
+                    padding: 2%;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    a{
+                        text-decoration: none;
+                        li{
+                        font-size: 1.3rem;
+                        text-align: center;
+                        color: $color-nav;
+                        @media screen and (max-width:1280px){
+                            font-size: 0.8rem;
+                        }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    .caja-perfil{
+        // datos mios perfil
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 100%;
+        .caja{
+            padding: 5%;
+            ul{
+                display: grid;
+                grid-template-columns: repeat(2,50%);
+                grid-template-rows: repeat(5, 22%);  
+                li{
+                    font-size: 1.5rem;
+                    color: whitesmoke;
+                    border: 1px solid whitesmoke;
+                }
+            }
+        }
+        // foto perfil
+        .fotoperfil{
+            text-align: center;
+            padding: 5%;
+            img{
+                width: 40%;
+            }
+        }
+    }
+    section{
+        // explicacion perfil
+        .perfilp{
+            border: 10px solid $color-bordes;
+            margin: 0px 20px;
+            font-size: 2.5rem;
+            color: black;
+            background-color: whitesmoke;
+        }
+    }
+}
+
+// estudios
+
+body{
+    section{
+        // foto fondo estudios
+        .uadefoto{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 20px;
+            z-index: -1;
+            img{
+                width: 63%;
+            }
+        }
+    }
+    main{
+        // estudios mios
+        .estudios{
+            display: grid;
+            background-color: rgb(212, 212, 212);
+            border: 5px solid $color-bordes;
+            grid-template-areas: 
+            "uno uno "
+            "dos tres"
+            "cuatro cinco"
+            "seis siete"
+            ;
+
+            position: absolute;
+            height: 45%;
+            width: 85%;
+            left: 10%;
+            top: 45%;
+            h1{
+                font-size: 2rem;
+            }
+            h2 ,h3 ,h4{
+                @include custom-font(2.5rem,800);
+                @media screen and (max-width:1280px){
+                    font-size: 1.5rem;
+                }
+            }
+            p{
+                @include custom-font(2rem, 500);
+            }
+        }
+        .uno-estudio{grid-area: uno;}
+        .dos-estudio{grid-area: dos;}
+        .tres-estudio{grid-area: tres;}
+        .cuatro-estudio{grid-area: cuatro;}
+        .cinco-estudio{grid-area: cinco;}
+        .seis-estudio{grid-area: seis;}
+        .siete-estudio{grid-area: siete;}
+    }
+}
+
+// experiencias
+
+body{
+    main{
+        // foto de fondo experiencias
+        .uadefotodos{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 20px;
+            z-index: -1;
+            img{
+                width: 55%;
+            }
+        }
+        // experiencias propias totalmente inventado
+        .experienciap{
+            background-color: rgb(212, 212, 212);
+            border: 5px solid $color-bordes;
+            position: absolute;
+            height: 40%;
+            width: 85%;
+            left: 10%;
+            top: 50%;
+            p{
+                @include custom-font(1.5rem, 900);
+                @media screen and (max-width:1280px){
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+// contacto
+
+body{
+    main{
+        // texto contacto
+        .comunicate{
+            h1{
+                text-align: center;
+                color: whitesmoke;
+            }
+        }
+        // imagenes contacto
+        .iconos-contacto{
+            @include grid-layout(3, 33%, 100%);
+            place-items: center; 
+            div{
+                img{
+                    width: 120%;
+                    margin-top: 30px;
+
+                }
+            }
+        }
+    }
+    section{
+        // enviar mensajes contacto
+        .mensaje{
+            text-align: center;
+            color: whitesmoke;
+            margin-top: 20px;
+        }
+        .escribir{
+            text-align: center;
+        }
+        .enviar{
+            text-align: center;
+        }
+    }
+}

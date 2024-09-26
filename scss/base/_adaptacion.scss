@@ -1,0 +1,131 @@
+// adaptacion movil index
+
+@media screen and (max-width:1280px){
+    .index-body{
+        main{
+            nav{
+                .nav-index{
+                    grid-template-columns: repeat(2, 50%);
+                    grid-template-rows: repeat(2, 50%);
+                    padding-right: 5%;
+                    padding: 5%;
+                    margin-top: 40px;
+                    li{
+                        border: 20px solid black;
+                    }
+                }
+            }
+        }
+   }
+}
+
+//adaptacion movil perfil
+@media screen and (max-width:1280px){
+    body{
+        header{
+            nav{
+                ul{
+                    li{
+                    // no me toma la font no se porque
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        .caja-perfil{
+            grid-template-columns: 100% 0%;
+            .caja{
+                ul{
+                    li{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            .fotoperfil{
+                img{
+                    display: none;
+                }
+            }
+        }
+        section{
+            .perfilp{
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+// adaptacion movil estudios
+
+@media screen and (max-width:1280px){
+    body{
+        section{
+            .uadefoto{
+                img{
+                    width: 120%;
+                }
+            }
+        }
+        main{
+            .estudios{
+                top: 35%;
+                h1{
+                    font-size: 2rem;
+                }
+                h2,h3,h4{
+                    font-size: 1,2rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+// adaptacion movil experiencias
+
+@media screen and (max-width:1280px){
+    body{
+        main{
+            .experienciasp{
+                p{
+                    font-size: 1.1rem;
+                }
+            }
+            .uadefotodos{
+                img{
+                    width: 140%;
+                }
+            }
+        }
+    }
+}
+
+// adaptacion movil contacto
+
+@media screen and (max-width:1280px){
+    body{
+        main{
+            .iconos-contacto{
+                div{
+                    img{
+                        width: 80%;
+                        margin-top: 30px;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+        section{
+            .escribir{
+                textarea{
+                    width: 80%;
+                    height: 250px;
+                }
+            }
+        }
+    }
+}

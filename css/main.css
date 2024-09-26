@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: rgb(32, 31, 31);
+  height: 100%;
+}
+
+.index-body .fondo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.index-body .header-index {
+  display: block;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 5%;
+}
+.index-body .header-index div h1 {
+  padding-bottom: 2%;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: "Roboto, sans-serif";
+}
+.index-body .header-index div h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Roboto, sans-serif";
+}
+.index-body main nav .nav-index {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 100%;
+  margin-top: 100px;
+}
+.index-body main nav .nav-index a {
+  text-decoration: none;
+}
+.index-body main nav .nav-index a li {
+  border: 50px solid black;
+  font-size: 20px;
+  border-radius: 100%;
+  background-color: black;
+  text-align: center;
+  color: rgb(54, 54, 230);
+}
+
+body {
+  background-color: rgb(32, 31, 31);
+}
+body header nav ul {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: 100%;
+  background-color: black;
+  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+body header nav ul a {
+  text-decoration: none;
+}
+body header nav ul a li {
+  font-size: 1.3rem;
+  text-align: center;
+  color: rgb(54, 54, 230);
+}
+@media screen and (max-width: 1280px) {
+  body header nav ul a li {
+    font-size: 0.8rem;
+  }
+}
+body .caja-perfil {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 100%;
+}
+body .caja-perfil .caja {
+  padding: 5%;
+}
+body .caja-perfil .caja ul {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(5, 22%);
+}
+body .caja-perfil .caja ul li {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+body .caja-perfil .fotoperfil {
+  text-align: center;
+  padding: 5%;
+}
+body .caja-perfil .fotoperfil img {
+  width: 40%;
+}
+body section .perfilp {
+  border: 10px solid #023d02;
+  margin: 0px 20px;
+  font-size: 2.5rem;
+  color: black;
+  background-color: whitesmoke;
+}
+
+body section .uadefoto {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 20px;
+  z-index: -1;
+}
+body section .uadefoto img {
+  width: 63%;
+}
+body main .estudios {
+  display: grid;
+  background-color: rgb(212, 212, 212);
+  border: 5px solid #023d02;
+  grid-template-areas: "uno uno " "dos tres" "cuatro cinco" "seis siete";
+  position: absolute;
+  height: 45%;
+  width: 85%;
+  left: 10%;
+  top: 45%;
+}
+body main .estudios h1 {
+  font-size: 2rem;
+}
+body main .estudios h2, body main .estudios h3, body main .estudios h4 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-family: "Roboto, sans-serif";
+}
+@media screen and (max-width: 1280px) {
+  body main .estudios h2, body main .estudios h3, body main .estudios h4 {
+    font-size: 1.5rem;
+  }
+}
+body main .estudios p {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Roboto, sans-serif";
+}
+body main .uno-estudio {
+  grid-area: uno;
+}
+body main .dos-estudio {
+  grid-area: dos;
+}
+body main .tres-estudio {
+  grid-area: tres;
+}
+body main .cuatro-estudio {
+  grid-area: cuatro;
+}
+body main .cinco-estudio {
+  grid-area: cinco;
+}
+body main .seis-estudio {
+  grid-area: seis;
+}
+body main .siete-estudio {
+  grid-area: siete;
+}
+
+body main .uadefotodos {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 20px;
+  z-index: -1;
+}
+body main .uadefotodos img {
+  width: 55%;
+}
+body main .experienciap {
+  background-color: rgb(212, 212, 212);
+  border: 5px solid #023d02;
+  position: absolute;
+  height: 40%;
+  width: 85%;
+  left: 10%;
+  top: 50%;
+}
+body main .experienciap p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: "Roboto, sans-serif";
+}
+@media screen and (max-width: 1280px) {
+  body main .experienciap p {
+    font-size: 0.9rem;
+  }
+}
+
+body main .comunicate h1 {
+  text-align: center;
+  color: whitesmoke;
+}
+body main .iconos-contacto {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: 100%;
+  place-items: center;
+}
+body main .iconos-contacto div img {
+  width: 120%;
+  margin-top: 30px;
+}
+body section .mensaje {
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 20px;
+}
+body section .escribir {
+  text-align: center;
+}
+body section .enviar {
+  text-align: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .index-body main nav .nav-index {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    padding-right: 5%;
+    padding: 5%;
+    margin-top: 40px;
+  }
+  .index-body main nav .nav-index li {
+    border: 20px solid black;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body header nav ul li {
+    font-size: 0.8rem;
+  }
+  body .caja-perfil {
+    grid-template-columns: 100% 0%;
+  }
+  body .caja-perfil .caja ul li {
+    font-size: 1.2rem;
+  }
+  body .caja-perfil .fotoperfil img {
+    display: none;
+  }
+  body section .perfilp p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body section .uadefoto img {
+    width: 120%;
+  }
+  body main .estudios {
+    top: 35%;
+  }
+  body main .estudios h1 {
+    font-size: 2rem;
+  }
+  body main .estudios h2, body main .estudios h3, body main .estudios h4 {
+    font-size: 1, 2rem;
+  }
+  body main .estudios p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body main .experienciasp p {
+    font-size: 1.1rem;
+  }
+  body main .uadefotodos img {
+    width: 140%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body main .iconos-contacto div img {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+  body section .escribir textarea {
+    width: 80%;
+    height: 250px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
